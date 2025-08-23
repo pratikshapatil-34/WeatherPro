@@ -1,4 +1,5 @@
 WeatherPro
+
 **Core Features:
 
 Real-time weather data with location detection
