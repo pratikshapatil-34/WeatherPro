@@ -1,14 +1,28 @@
-WeatherPro
+<H1>
+  WeatherPro 
+</H1>
+
+ <H3> COMPANY: CODTECH IT SOLUTIONS </H3>
+  <H3> NAME: PRATIKSHA PRATAP PATIL </H3>
+  <H3>INTERN ID: CT04DY1743 </H3>
+ <H3> DOMAIN: UI/UX DESIGN</H3>
+ <H3> MENTOR: NEELA SANTOSH</H3>
+
+  <h3>After</h3>
+ <img width="1424" height="816" alt="Image" src="https://github.com/user-attachments/assets/d9d7c423-35ed-455f-9132-c51f55d16cd1" />
+
+ <h3>Before</h3>
+https://github.com/user-attachments/assets/f98e25c4-78d7-4d43-a232-56df1ec3122d
 
 **Core Features:
 
 Real-time weather data with location detection
-5-day detailed forecast with hourly breakdowns
-Interactive weather map with layer controls
-Weather analytics with temperature and precipitation charts
-Location search with autocomplete
-Responsive design optimized for all devices
-Weather alerts and notifications system
+2.5-day detailed forecast with hourly breakdowns
+3.Interactive weather map with layer controls
+4.Weather analytics with temperature and precipitation charts
+5.Location search with autocomplete
+6.Responsive design optimized for all devices
+7.Weather alerts and notifications system
 
 **Design Elements:
 
