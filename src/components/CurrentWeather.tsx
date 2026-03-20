@@ -1,6 +1,7 @@
 import React from 'react';
 import { Thermometer, Droplets, Wind, Eye, Sun, Gauge } from 'lucide-react';
 import { useWeather } from '../context/WeatherContext';
+import { fahrenheitToCelsius, formatTemperature } from '../utils/temperature';
 
 const CurrentWeather: React.FC = () => {
   const { weatherData, loading, error } = useWeather();
@@ -32,7 +33,7 @@ const CurrentWeather: React.FC = () => {
   const { current } = weatherData;
 
   const weatherMetrics = [
-    { icon: Thermometer, label: 'Feels Like', value: `${current.feelsLike}°F` },
+    { icon: Thermometer, label: 'Feels Like', value: formatTemperature(current.feelsLike) },
     { icon: Droplets, label: 'Humidity', value: `${current.humidity}%` },
     { icon: Wind, label: 'Wind Speed', value: `${current.windSpeed} mph` },
     { icon: Gauge, label: 'Pressure', value: `${current.pressure} mb` },
@@ -47,7 +48,7 @@ const CurrentWeather: React.FC = () => {
         <div>
           <h2 className="text-white/80 text-lg font-medium mb-2">{current.location}</h2>
           <div className="flex items-center space-x-4">
-            <span className="text-6xl font-light text-white">{current.temperature}°</span>
+            <span className="text-6xl font-light text-white">{fahrenheitToCelsius(current.temperature)}°</span>
             <div>
               <span className="text-4xl">{current.icon}</span>
               <p className="text-white/90 text-xl font-medium">{current.condition}</p>

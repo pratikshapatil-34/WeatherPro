@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Calendar, Clock } from 'lucide-react';
 import { useWeather } from '../context/WeatherContext';
+import { fahrenheitToCelsius } from '../utils/temperature';
 
 const Forecast: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'daily' | 'hourly'>('daily');
@@ -82,8 +83,8 @@ const Forecast: React.FC = () => {
                     <p className="text-white font-medium">{day.windSpeed} mph</p>
                   </div>
                   <div className="text-right min-w-[80px]">
-                    <p className="text-white text-lg font-semibold">{day.high}°</p>
-                    <p className="text-white/70">{day.low}°</p>
+                    <p className="text-white text-lg font-semibold">{fahrenheitToCelsius(day.high)}°</p>
+                    <p className="text-white/70">{fahrenheitToCelsius(day.low)}°</p>
                   </div>
                 </div>
               </div>
@@ -98,7 +99,7 @@ const Forecast: React.FC = () => {
               >
                 <p className="text-white/70 text-sm mb-2">{hour.time}</p>
                 <span className="text-xl block mb-2 group-hover:scale-110 transition-transform duration-300">{hour.icon}</span>
-                <p className="text-white font-semibold text-lg mb-1">{hour.temperature}°</p>
+                <p className="text-white font-semibold text-lg mb-1">{fahrenheitToCelsius(hour.temperature)}°</p>
                 <p className="text-white/70 text-xs">{hour.precipitation}%</p>
               </div>
             ))}

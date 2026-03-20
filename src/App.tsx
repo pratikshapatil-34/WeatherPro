@@ -26,9 +26,9 @@ function App() {
   return (
     <WeatherProvider>
       <div className={`min-h-screen transition-all duration-500 ${
-        isDarkMode 
-          ? 'bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900' 
-          : 'bg-gradient-to-br from-blue-400 via-cyan-400 to-blue-500'
+        isDarkMode
+          ? 'bg-gradient-to-br from-slate-900 via-teal-900 to-emerald-900'
+          : 'bg-gradient-to-br from-teal-400 via-emerald-400 to-cyan-500'
       }`}>
         <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
         

@@ -5,8 +5,8 @@ const WeatherMap: React.FC = () => {
   const [activeLayer, setActiveLayer] = useState<'temperature' | 'precipitation' | 'clouds' | 'wind'>('temperature');
   
   const mapLayers = [
-    { id: 'temperature', label: 'Temperature', icon: Map, color: 'from-blue-500 to-red-500' },
-    { id: 'precipitation', label: 'Precipitation', icon: Cloud, color: 'from-green-400 to-blue-600' },
+    { id: 'temperature', label: 'Temperature', icon: Map, color: 'from-teal-500 to-red-500' },
+    { id: 'precipitation', label: 'Precipitation', icon: Cloud, color: 'from-emerald-400 to-teal-600' },
     { id: 'clouds', label: 'Cloud Cover', icon: Satellite, color: 'from-gray-400 to-white' },
     { id: 'wind', label: 'Wind Speed', icon: Zap, color: 'from-yellow-400 to-orange-500' }
   ];
@@ -110,7 +110,7 @@ const WeatherMap: React.FC = () => {
           {[...Array(8)].map((_, i) => (
             <div
               key={i}
-              className="absolute w-3 h-3 bg-blue-400 rounded-full shadow-lg pointer-events-auto cursor-pointer hover:scale-150 transition-transform duration-200"
+              className="absolute w-3 h-3 bg-teal-400 rounded-full shadow-lg pointer-events-auto cursor-pointer hover:scale-150 transition-transform duration-200"
               style={{
                 left: `${20 + Math.random() * 60}%`,
                 top: `${20 + Math.random() * 60}%`
