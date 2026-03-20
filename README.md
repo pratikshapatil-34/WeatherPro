@@ -2,11 +2,7 @@
   WeatherPro 
 </H1>
 
- <H3> COMPANY: CODTECH IT SOLUTIONS </H3>
   <H3> NAME: PRATIKSHA PRATAP PATIL </H3>
-  <H3>INTERN ID: CT04DY1743 </H3>
- <H3> DOMAIN: UI/UX DESIGN</H3>
- <H3> MENTOR: NEELA SANTOSH</H3>
 
   <h3>After</h3>
  <img width="1424" height="816" alt="Image" src="https://github.com/user-attachments/assets/d9d7c423-35ed-455f-9132-c51f55d16cd1" />
